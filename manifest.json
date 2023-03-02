@@ -1,0 +1,12 @@
+{
+    "name": "SkinClub battle case stats",
+    "description": "Show stats about case battles",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+        "matches": ["*://skin.club/*/battles/view/*"],
+        "js": ["index.js"]
+      }
+    ]
+}
