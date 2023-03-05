@@ -11,6 +11,7 @@ setInterval(async ()=>{
         }
         precision = Math.pow(10, 2)
         skinsPrices[i] = Math.ceil(finalPrice * precision) / precision;
+        finalPrice = 0;
 
         if(!playersPanel[i].innerHTML.includes("total-win-sum")){
             playersPanel[i].innerHTML += `<p style="color: #4af1cc;" class="total-win-sum">$${skinsPrices[i]}</p>`;
