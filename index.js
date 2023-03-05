@@ -9,9 +9,9 @@ setInterval(async ()=>{
         for(let x = 0; x < temp.length; x++){
             finalPrice += parseFloat(temp[x].innerHTML.substring(1));
         }
+        finalPrice = 0;
         precision = Math.pow(10, 2)
         skinsPrices[i] = Math.ceil(finalPrice * precision) / precision;
-        finalPrice = 0;
 
         if(!playersPanel[i].innerHTML.includes("total-win-sum")){
             playersPanel[i].innerHTML += `<p style="color: #4af1cc;" class="total-win-sum">$${skinsPrices[i]}</p>`;
